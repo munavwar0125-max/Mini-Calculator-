@@ -1,34 +1,84 @@
 #container
 {background-color:#8934eb;
 display:flex;
-gap:space-evenly;
-grid-row-gap: 10%;
-  grid-column-gap: 25%;
- align-items:center;
- align-content: end;
+flex:0 0 auto;
+/*gap:space-evenly;
+grid-row-gap: 15px;
+grid-column-gap: 35px;*/
+ align-items:flex-start;
+align-content: end;
 flex-wrap:wrap;
 justify-content: center;
 /*justify-content: flex end;*/
 flex-direction:row;
-height: 500px;width:500px;
+height: 670px;width:350px;
+transition:all;
+transition-delay: 1s;
 }
-#box1{
+.box1:hover{
+  background-color: yellow;
+}
+#box2:hover{
+  background-color: yellow;
+}
+#box3:hover{
+  background-color: yellow;
+}
+#box4:hover{
+  background-color: yellow;
+}
+#box5:hover{
+  background-color: yellow;
+}
+#box6:hover{
+  background-color: yellow;
+}
+#box3:active{
+  background-color: pink;
+}
+#box7:hover{
+  background-color: yellow;
+}
+#box8:hover{
+  background-color: yellow;
+}
+#box9:hover{
+  background-color: yellow;
+}
+#box0:hover{
+  background-color: yellow;
+}
+#boxo:hover{
+  background-color: yellow;
+}
+#boxDel:hover{
+  background-color: yellow;
+}
+.box1{
   background-color: #34eb4f;
   border:2px solid black;
   text-decoration-color:#eb3461 ;
-  height:50px;
-  width: 50px;
-  row-gap: 5%;
-  column-gap: 5%;
-/*padding-right: ;:20px;*/
-margim
+  text-align: center;
+  text-align: top;
+  height:100px;
+  width: 100px;
+  transition:all;
+/*transition-delay: 1s;*/
+  border-radius:50px;
+display: inline;
+/*cursor:pointer;*/
+
 }
-#box2{background-color: #eb7434;
+#box2{background-color:#34eb4f;
 border:2px solid black;
 text-decoration-color: #34eb4f;
-height: 50px;
-width: 50px;
+height: 100px;
+width: 100px;
+border-radius: 50px;
 /*padding-right:20px;*/
+text-align: center;
+transition:all;
+transition-delay: 1s;
 }
 
 
@@ -36,36 +86,46 @@ width: 50px;
   background-color: #34eb4f;
   border:2px solid black;
   text-decoration-color:#eb3461 ;
-  height:50px;
-  width: 50px;
+  height:100px;
+  width: 100px;
+  border-radius: 50px;
 /*padding:20px;*/
+text-align: center;
+transition:all;
+transition-delay: 1s;
 }
 
 #box4{
   background-color: #34eb4f;
   border:2px solid black;
   text-decoration-color:#eb3461 ;
-  height:50px;
-  width: 50px;
+  height:100px;
+  width: 100px;
+  border-radius:50px;
 /*padding:20px;*/
+text-align: center;
 }
 #box5{
   background-color: #34eb4f;
   border:2px solid black;
   border-color:black;
   text-decoration-color:#eb3461 ;
-  height:50px;
-  width: 50px;
+  height:100px;
+  width: 100px;
+  border-radius:50px;
 /*padding:20px;*/
+text-align: center;
 }
 #box6{
   background-color: #34eb4f;
   border:2px solid black;
   border-color:black;
   text-decoration-color:#eb3461 ;
-  height:50px;
-  width: 50px;
+  height:100px;
+  width: 100px;
+  border-radius:50px;
 /*  padding:20px;*/
+text-align: center;
 }
 
 #box7{
@@ -73,9 +133,11 @@ width: 50px;
   border:2px solid black;
   border-color:black;
   text-decoration-color:#eb3461 ;
-  height:50px;
-  width: 50px;
+  height:100px;
+  width: 100px;
+  border-radius:50px;
  /* padding:20px;*/
+  text-align: center;
 }
 
 #box8{
@@ -83,18 +145,22 @@ width: 50px;
   border:2px solid black;
   border-color:black;
   text-decoration-color:#eb3461 ;
-  height:50px;
-  width: 50px;
+  height:100px;
+  width: 100px;
+  border-radius:50px;
  /* padding:20px;*/
+ text-align: center;
 }
 #box9{
   background-color: #34eb4f;
   border:2px solid black;
   border-color:black;
   text-decoration-color:#eb3461 ;
-  height:50px;
-  width: 50px;
+  height:100px;
+  width: 100px;
+  border-radius:50px;
 /*  padding:20px;*/
+text-align: center;
 }
 
 #box9{
@@ -102,17 +168,21 @@ width: 50px;
   border:2px solid black;
   border-color:black;
   text-decoration-color:#eb3461 ;
-  height:50px;
-  width: 50px;
+  height:100px;
+  width: 100px;
+  border-radius:50px;
  /* padding:20px;*/
-}#box«{
-  background-color: #34eb4f;
+ text-align: center;
+}#boxDel{
+  background-color:  #eb7434; 
   border:2px solid black;
   border-color:black;
   text-decoration-color:#eb3461 ;
-  height:50px;
-  width: 50px;
+  height:100px;
+  width: 100px;
+  border-radius:50px;
 /*  padding:20px;*/
+text-align: center;
 }
 
 #box0{
@@ -120,17 +190,21 @@ width: 50px;
   border:2px solid black;
   border-color:black;
   text-decoration-color:#eb3461 ;
-  height:50px;
-  width: 50px;
+  height:100px;
+  width: 100px;
+  border-radius: 50px;
+  text-align: center;
 /*  padding:20px;*/
 }
 #boxo{
-  background-color: #34eb4f;
+  background-color: #eb7434; 
   border:2px solid black;
   border-color:black;
+  text-align: center;
   text-decoration-color:#eb3461 ;
-  height:50px;
-  width: 50px;
+  height:100px;
+  width: 100px;
+  border-radius: 50px;
 /*  padding:20px;*/
 }
 
