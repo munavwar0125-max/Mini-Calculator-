@@ -11,7 +11,7 @@ flex-wrap:wrap;
 justify-content: center;
 /*justify-content: flex end;*/
 flex-direction:row;
-height: 670px;width:350px;
+height: 670px;width:550px;
 transition:all;
 transition-delay: 1s;
 }
