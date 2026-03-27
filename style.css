@@ -1,0 +1,18 @@
+#container
+{background-color:#8934eb;
+height: 500px;width:500px;
+};
+#box1{
+  background-color: #34eb4f;
+  border-color:black;
+  text-decoration-color:#eb3461 ;
+  height:50px;
+  width: 50px;
+
+}
+#box2{background-color: #eb7434;
+border-color:black;
+text-decoration-color: #34eb4f;
+height: 50px;
+width: 50px;
+}
