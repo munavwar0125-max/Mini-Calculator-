@@ -11,8 +11,11 @@ body{
 display:grid;
   grid-template-columns:repeat(4,1fr);
   gap:10px;
-width: 320px;
-margin: 10px;
+  width:min(100vw,400px);
+  
+margin: 15px;
+box-sizing:border-box;
+box-shadow:0 0 15px rgba(0,0,0,0.3);
 }
 
 .display{
@@ -52,7 +55,6 @@ margin: 10px;
   background-color: blue;
   text-align: center;
 }
-
 
 
 
