@@ -8,7 +8,10 @@
   </head>
   <body>
     <div id="container">
-      <input type="text" class="display" readonly>
+    <div class="top">
+      <div class="ac" onclick="clearDisplay()"><h1>Ac</h1></div>
+      <input type="text" class="display"readonly>
+      </div>
         <div class="box" onclick="appendValue('1')">
       <h1>1</h1> </div>
         <div class ="box" onclick="appendValue('2')">
@@ -52,7 +55,7 @@
          <div class ="red" onclick="calculate()">
       <h1>=</h1>
         </div>
-        <div class ="green" onclick="append('/')">
+        <div class ="green" onclick="appendValue('/')">
       <h1>/</h1>
         </div>    
         
