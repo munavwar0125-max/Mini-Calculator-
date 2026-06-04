@@ -72,7 +72,8 @@ body{
 
 .box{
     height:60px;
-    background:#e0e0e0;
+    color: black;
+    background:#e0e;
     border-radius:10px;
     display:flex;
     justify-content:center;
@@ -83,7 +84,7 @@ body{
 .green{
     height:60px;
     background:#4caf50;
-    color:white;
+    color:#eb8034;
     border-radius:10px;
     display:flex;
     justify-content:center;
@@ -94,7 +95,7 @@ body{
 .red{
     height:60px;
     background:#f44336;
-    color:white;
+    color:grey;
     border-radius:10px;
     display:flex;
     justify-content:center;
@@ -106,6 +107,7 @@ body{
 .green:hover,
 .red:hover,
 .ac:hover{
+  background: yellow;
     opacity:0.85;
 }
 
