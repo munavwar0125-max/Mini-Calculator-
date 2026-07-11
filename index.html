@@ -1,72 +1,102 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO -->
+    <title>Mini Calculator by Munavwar Shaik | Free Online Calculator</title>
+    <meta name="description" content="A free, fast, simple online mini calculator by Munavwar Shaik. Add, subtract, multiply and divide instantly in your browser — no download required.">
+    <meta name="keywords" content="mini calculator, online calculator, free calculator, Munavwar Shaik calculator, simple web calculator">
+    <meta name="author" content="Munavwar Shaik">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://yourdomain.com/">
+
+    <!-- Google Search Console verification -->
     <meta name="google-site-verification" content="M7DJvtF9Cjwhr4J6KAveNsVTDJH0ovawVv1atBeqkP0">
-    <title> Munavwar Mini Calculator </title>
-    <meta name="description" content="Simple calculator by Munavwar">
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mini Calculator by Munavwar Shaik">
+    <meta property="og:description" content="A free, fast, simple online mini calculator. Add, subtract, multiply and divide instantly in your browser.">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:site_name" content="Munavwar Mini Calculator">
+    <meta property="og:image" content="https://yourdomain.com/og-image.png">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mini Calculator by Munavwar Shaik">
+    <meta name="twitter:description" content="A free, fast, simple online mini calculator. Add, subtract, multiply and divide instantly in your browser.">
+    <meta name="twitter:image" content="https://yourdomain.com/og-image.png">
+
+    <!-- Favicon (optional, add your own file) -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- Structured data for rich results -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Munavwar Mini Calculator",
+      "url": "https://yourdomain.com/",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "description": "A free, fast, simple online mini calculator. Add, subtract, multiply and divide instantly in your browser.",
+      "author": {
+        "@type": "Person",
+        "name": "Munavwar Shaik"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
   </head>
   <body>
-    <div class="title">
-       <h2><b>Mini-Calculator</b></h2>
-    <h5><i>by Munavwar Shaik</i></h5>
-    </div>
-   
-    
-    <div id="container">
-    <div class="top">
-      <div class="ac" onclick="clearDisplay()"><h1>Ac</h1></div>
-      <input type="text" class="display"readonly>
+    <header class="title">
+      <h1>Mini Calculator</h1>
+      <p><i>by Munavwar Shaik</i></p>
+    </header>
+
+    <main id="container" role="application" aria-label="Calculator">
+      <div class="top">
+        <button class="ac" onclick="clearDisplay()" aria-label="Clear display"><h2>Ac</h2></button>
+        <input type="text" class="display" id="display" readonly aria-label="Calculator display" aria-live="polite">
       </div>
-        <div class="box" onclick="appendValue('1')">
-      <h1>1</h1> </div>
-        <div class ="box" onclick="appendValue('2')">
-      <h1>2</h1>
-       </div>
-       <div class ="box" onclick="appendValue('3')">
-      <h1>3</h1>
-        </div>
-         <div class ="green" onclick="appendValue('+')">
-      <h1>+</h1>
-        </div>
-        <div class ="box" onclick="appendValue('4')">
-      <h1>4</h1>
-        </div>
-        <div class ="box" onclick="appendValue('5')">
-      <h1>5</h1>
-        </div>
-         <div class ="box" onclick="appendValue('6')">
-      <h1>6</h1>
-        </div>
-         <div class ="green" onclick="appendValue('-')">
-      <h1>-</h1>
-        </div>
-         <div class ="box" onclick="appendValue('7')">
-      <h1>7</h1>
-        </div>
-         <div class ="box" onclick="appendValue('8')">
-      <h1>8</h1>
-        </div>
-        <div class ="box" onclick="appendValue('9')">
-      <h1>9</h1>
-        </div>
-        <div class ="green" onclick="appendValue('*')">
-      <h1>×</h1>
-        </div>
-         <div class ="red" onclick="deleteLast()">
-      <h1>Del</h1></div>
-         <div class ="box" onclick="appendValue('0')">
-      <h1>0</h1>
-        </div>
-         <div class ="red" onclick="calculate()">
-      <h1>=</h1>
-        </div>
-        <div class ="green" onclick="appendValue('/')">
-      <h1>/</h1>
-        </div>    
-        
-     
-    </div>
+
+      <button class="box" onclick="appendValue('1')" aria-label="One"><h2>1</h2></button>
+      <button class="box" onclick="appendValue('2')" aria-label="Two"><h2>2</h2></button>
+      <button class="box" onclick="appendValue('3')" aria-label="Three"><h2>3</h2></button>
+      <button class="green" onclick="appendValue('+')" aria-label="Plus"><h2>+</h2></button>
+
+      <button class="box" onclick="appendValue('4')" aria-label="Four"><h2>4</h2></button>
+      <button class="box" onclick="appendValue('5')" aria-label="Five"><h2>5</h2></button>
+      <button class="box" onclick="appendValue('6')" aria-label="Six"><h2>6</h2></button>
+      <button class="green" onclick="appendValue('-')" aria-label="Minus"><h2>-</h2></button>
+
+      <button class="box" onclick="appendValue('7')" aria-label="Seven"><h2>7</h2></button>
+      <button class="box" onclick="appendValue('8')" aria-label="Eight"><h2>8</h2></button>
+      <button class="box" onclick="appendValue('9')" aria-label="Nine"><h2>9</h2></button>
+      <button class="green" onclick="appendValue('*')" aria-label="Multiply"><h2>×</h2></button>
+
+      <button class="red" onclick="deleteLast()" aria-label="Delete last digit"><h2>Del</h2></button>
+      <button class="box" onclick="appendValue('0')" aria-label="Zero"><h2>0</h2></button>
+      <button class="red" onclick="calculate()" aria-label="Calculate result"><h2>=</h2></button>
+      <button class="green" onclick="appendValue('/')" aria-label="Divide"><h2>/</h2></button>
+    </main>
+
+    <footer>
+      <p style="text-align:center;color:#666;margin-top:20px;font-size:14px;">
+        &copy; 2026 Munavwar Shaik. All rights reserved.
+      </p>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
