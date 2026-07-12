@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://munavwar0125-max.github.io/Mini-Calculator-/sitemap.xml
